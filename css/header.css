@@ -1,0 +1,79 @@
+/* 헤더 */
+header {
+    background: #F2E9D8;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-wrapper {
+    width: 1280px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 102px;
+}
+
+header nav a {
+    height: 40px;
+}
+header nav a img {
+    width: 130px;
+    height: 40px;
+}
+
+/* h1 숨기기 */
+header nav a h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+header nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 49px;
+    width: 205px;
+    justify-content: space-between;
+}
+
+header button {
+    color: white;
+    background-color: #D97652;
+    border: 0;
+    border-radius: 40px;
+    width: 140px;
+    height: 50px;
+}
+
+header section {
+    display: flex;
+    flex-grow: 1;
+}
+
+header section img {
+    margin-top: auto;
+    margin-left: auto;
+    width: 415px;
+    height: 766px;
+}
+
+header section h2 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 200px;
+}
+
+header section p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 40px 0;
+}

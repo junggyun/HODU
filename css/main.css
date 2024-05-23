@@ -1,118 +1,3 @@
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf') format("truetype");
-    font-display: swap;
-}
-* {
-    font-family: Pretendard, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-h2, p {
-    white-space: pre-line;
-}
-
-a {
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-}
-
-button {
-    cursor: pointer;
-}
-
-/* 헤더 */
-
-header {
-    background: #F2E9D8;
-    display: flex;
-    justify-content: center;
-}
-
-header .header-wrapper {
-    width: 1280px;
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    height: 102px;
-}
-
-header nav a {
-    height: 40px;
-}
-header nav a img {
-    width: 130px;
-    height: 40px;
-}
-
-/* h1 숨기기 */
-header nav a h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-header nav ul {
-    display: flex;
-    margin-left: auto;
-    margin-right: 49px;
-    width: 205px;
-    justify-content: space-between;
-}
-
-header button {
-    color: white;
-    background-color: #D97652;
-    border: 0;
-    border-radius: 40px;
-    width: 140px;
-    height: 50px;
-}
-
-header section {
-    display: flex;
-    flex-grow: 1;
-}
-
-header section img {
-    margin-top: auto;
-    margin-left: auto;
-    width: 415px;
-    height: 766px;
-}
-
-header section h2 {
-    font-size: 48px;
-    line-height: 60px;
-    margin-top: 200px;
-}
-
-header section p {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 40px 0;
-}
-
 /* 메인 */
 main {
     display: flex;
@@ -122,6 +7,7 @@ main {
 .main-wrapper {
     width: 1280px;
 }
+
 /* main-top */
 .main-top {
     display: flex;
@@ -288,7 +174,7 @@ main {
     margin-right: 6px;
 }
 .subscribe-modal {
-    background-image: url("img/모달배경.png");
+    background-image: url("../img/모달배경.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +191,7 @@ main {
     visibility: hidden;
 }
 #subscribeModal.visible {
-     visibility: visible;
+    visibility: visible;
 }
 .subscribe-modal h2 {
     font-size: 36px;
@@ -327,49 +213,4 @@ main {
     border-radius: 40px;
     width: 183px;
     height: 50px;
-}
-
-/* 푸터 */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-footer button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 0;
-    position: absolute;
-    bottom: 179px;
-    right: 24px;
-}
-footer button img:hover {
-    content: url("img/상단이동버튼.png");
-}
-footer>img {
-    width: 100%;
-    height: 340px;
-}
-.footer-wrapper {
-    width: 1280px;
-    height: 160px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-wrapper img {
-    width: 226px;
-    height: 70px;
-}
-.footer-wrapper ul {
-    display: flex;
-    justify-content: space-between;
-    width: 228px;
-    margin-left: auto;
-}
-.footer-wrapper ul li img {
-    width: 42px;
-    height: 42px;
 }
