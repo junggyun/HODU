@@ -106,17 +106,16 @@ main {
     margin-bottom: 48px;
 }
 
+/* 카카오 맵 */
 .main-bottom .map {
-    margin-bottom: 181px;
-}
-
-.main-bottom div img {
     width: 1278px;
     height: 520px;
     border-radius: 12px;
     color: #E8E8E8;
+    margin-bottom: 181px;
 }
 
+/* 카카오 맵 끝*/
 .subscribe {
     display: flex;
     justify-content: space-between;
