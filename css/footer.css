@@ -9,7 +9,7 @@ footer button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 0;
+    border: 1px solid #C4C4C4;
     position: absolute;
     bottom: 179px;
     right: 24px;
