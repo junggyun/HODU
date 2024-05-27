@@ -112,9 +112,6 @@ main {
 }
 
 /* 카카오 맵 */
-.main-bottom .map_wrap {
-    position: relative;
-}
 .main-bottom .map {
     width: 1278px;
     height: 520px;
