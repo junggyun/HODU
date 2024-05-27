@@ -30,6 +30,7 @@ a:visited {
 
 button {
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 
