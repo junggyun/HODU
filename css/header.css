@@ -18,7 +18,7 @@ header nav {
     height: 102px;
 }
 
-header nav a {
+header nav>a {
     height: 40px;
 }
 header nav a img {
@@ -43,6 +43,11 @@ header nav ul {
     margin-right: 49px;
     width: 205px;
     justify-content: space-between;
+}
+
+header nav ul a {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 header button {
