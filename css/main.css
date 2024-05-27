@@ -197,9 +197,7 @@ main {
 .subscribe-modal.hidden {
     display: none;
 }
-#subscribeModal.visible {
-    visibility: visible;
-}
+
 .subscribe-modal h2 {
     font-size: 36px;
     line-height: 45px;
