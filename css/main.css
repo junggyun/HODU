@@ -98,7 +98,7 @@ main {
     line-height: 45px;
 }
 
-.main-bottom span {
+.main-bottom>span {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
@@ -107,6 +107,9 @@ main {
 }
 
 /* 카카오 맵 */
+.main-bottom .map_wrap {
+    position: relative;
+}
 .main-bottom .map {
     width: 1278px;
     height: 520px;
@@ -187,7 +190,9 @@ main {
     padding: 60px 0 40px 0;
     z-index: 100;
     box-shadow: 0 0 30px 0 #00000033;
-    visibility: hidden;
+}
+.subscribe-modal.hidden {
+    display: none;
 }
 #subscribeModal.visible {
     visibility: visible;

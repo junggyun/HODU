@@ -1,32 +1,3 @@
-const hoduImages = document.querySelector('.hodu-images');
-const showMoreBtn = document.querySelector('.show-more-btn');
-let pageCount = 0;
-
-showMoreBtn.addEventListener('click', function () {
-    loadImages(pageCount += 1);
-});
-
-async function loadImages(page) {
-    try {
-        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=6`);
-        if (!response.ok) {
-            throw new Error('응답 오류');
-        }
-        const data = await response.json();
-        insertImages(data)
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-function insertImages(data) {
-    data.forEach((d) => {
-        hoduImages.insertAdjacentHTML('beforeend', `<img src="${d.download_url}" alt="">`)
-    })
-}
-
-
-
 //카카오맵
 let mapContainer = document.querySelector('.map'), // 지도를 표시할 div
     mapOption = {
@@ -34,6 +5,7 @@ let mapContainer = document.querySelector('.map'), // 지도를 표시할 div
         level: 3 // 지도의 확대 레벨
     };
 let map = new kakao.maps.Map(mapContainer, mapOption);
+
 
 //축척 위치
 map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMRIGHT, true);
